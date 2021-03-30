@@ -34,7 +34,7 @@
                                 </li>
                                 <li role="presentation">
                                     <a href="#statements" role="tab" data-toggle="tab" aria-selected="false">
-                                        Formal Students
+                                        Former Students
                                     </a>
                                 </li>
                             </ul>
@@ -82,7 +82,7 @@
                                             </div>
                                         </div><!-- end col-lg-4 -->
                                         <div class="col-lg-12 card-box-shared-title">
-                                            <h3 class="widget-title text-center">Formal Students</h3>
+                                            <h3 class="widget-title text-center">Former Students</h3>
                                         </div>
                                         <div class="col-lg-4 column-lmd-2-half column-md-2-full">
                                             <div class="icon-box icon-box-layout-2 bg-color-4 d-flex align-items-center">
