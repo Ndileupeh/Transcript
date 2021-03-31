@@ -77,7 +77,7 @@
                                                 </div><!-- end icon-element-->
                                                 <div class="info-content">
                                                     <h4 class="info__title mb-2">Super fast</h4>
-                                                    <span class="info__count">3000.0</span>
+                                                    <span class="info__count">3000.0CFA</span>
                                                 </div><!-- end info-content -->
                                             </div>
                                         </div><!-- end col-lg-4 -->
@@ -91,7 +91,7 @@
                                                 </div><!-- end icon-element-->
                                                 <div class="info-content">
                                                     <h4 class="info__title mb-2">Normal</h4>
-                                                    <span class="info__count">2000.0</span>
+                                                    <span class="info__count">2000.0CFA</span>
                                                 </div><!-- end info-content -->
                                             </div>
                                         </div><!-- end col-lg-4 -->
@@ -102,7 +102,7 @@
                                                 </div><!-- end icon-element-->
                                                 <div class="info-content">
                                                     <h4 class="info__title mb-2">Fast</h4>
-                                                    <span class="info__count">3000.0</span>
+                                                    <span class="info__count">3000.0CFA</span>
                                                 </div><!-- end info-content -->
                                             </div>
                                         </div><!-- end col-lg-4 -->
@@ -113,7 +113,7 @@
                                                 </div><!-- end icon-element-->
                                                 <div class="info-content">
                                                     <h4 class="info__title mb-2">Super fast</h4>
-                                                    <span class="info__count">5000.0</span>
+                                                    <span class="info__count">5000.0CFA</span>
                                                 </div><!-- end info-content -->
                                             </div>
                                         </div><!-- end col-lg-4 -->
