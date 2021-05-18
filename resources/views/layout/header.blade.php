@@ -6,7 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
     
-        <title>Aduca -  Education HTML Template</title>
+        <title>Transcript</title>
     
         <!-- Google fonts -->
         <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
@@ -28,6 +28,8 @@
         <link rel="stylesheet" href="addasset/css/tooltipster.bundle.css">
         <link rel="stylesheet" href="addasset/css/jqvmap.css">
         <link rel="stylesheet" href="addasset/css/style.css">
+        
+        
         <!-- end inject -->
     </head>
 <body>
@@ -50,22 +52,7 @@
                                 
                                 <nav class="main-menu">
                                     <ul>
-                                        {{-- <li>
-                                            <a href="#">Home</a>
-                                           
-                                        </li>
-                                        <li>
-                                            <a href="#">courses</a>
-                                            
-                                        </li>
-                                        <li>
-                                            <a href="#">Student</a>
-                                            
-                                        </li>
-                                        <li>
-                                            <a href="#">pages</a>
-                                            
-                                        </li> --}}
+                                       
                                         <li>
                                             <a href="{{ route('home') }}">Home</a>
                                             
@@ -139,30 +126,27 @@
                 <div class="side-menu-wrap">
                     <ul class="side-menu-ul">
                         <li class="sidenav__item"><br><br>
-                            <a href="{{ route('transcriptdetail') }}"><i class="la la-dashboard"></i> Dashboard menu</a>
+                            <a href="{{ route('transcriptlist') }}"><i class="la la-dashboard"></i> Dashboard menu</a>
                            
                             
                         </li>
-                        <li class="sidenav__item"><a href="{{ route('transcriptdetail') }}"><i class="la la-user"></i>Tarnscript</a>
-                            <ul>
-                                
-                                {{-- <li class="sidenav__item"><a href="{{ route('dashboard') }}"><i class="la la-bolt"></i>Pending</a></li>
-                                <li class="sidenav__item"><a href="{{ route('dashboard') }}"><i class="la la-bolt"></i>Complete</a></li>
-                                <li class="sidenav__item"><a href="{{ route('dashboard') }}"><i class="la la-bolt"></i>Collected</a></li>
-                                 --}}
-                            
-                            </ul>
+                        <li class="sidenav__item"><a href="{{ route('transcriptlist') }}"><i class="la la-user"></i>Tarnscript</a>
+                             
                         </li>
-                        <li class="sidenav__item"><a href="{{ route('pay') }}"><i class="la la-file-video-o"></i>Mods</a>
-                            {{-- <ul>
-                                <li class="sidenav__item"><a href="{{ route('dashboard') }}"><i class="la la-bolt"></i>Normal</a></li>
-                                <li class="sidenav__item"><a href="{{ route('dashboard') }}"><i class="la la-bolt"></i>Fast</a></li>
-                                <li class="sidenav__item"><a href="{{ route('dashboard') }}"><i class="la la-bolt"></i>Super Fast</a></li>
-                            </ul> --}}
+                        <li class="sidenav__item"><a href="{{ route('uploaded') }}"><i class="la la-user"></i>Upload transcript</a>
+                             
                         </li>
-                        <li class="sidenav__item"><a href="{{ route('dashboard') }}"><i class="la la-bolt"></i>Payment Method</a></li>
+                        
+                        <li class="sidenav__item"><a href="{{ route('transcriptdetail') }}"><i class="la la-bolt"></i>Payment Method</a></li>
                         <li class="sidenav__item"><a href="{{ route('home') }}"><i class="la la-bookmark"></i>Subscription</a></li>
-                        <li class="sidenav__item"><a href="{{ route('home') }}"><i class="la la-graduation-cap"></i>Logout</a></li>
+                        <li class="sidenav__item"><a href="{{ route('logout') }}" onclick="event.preventDefault();
+                            document.getElementById('logout-form').submit();"><i class="la la-graduation-cap"></i>Logout</a>
+                        
+                         <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
+                             @csrf
+                         </form>
+                        
+                        </li>
                         <li class="sidenav__item"><a href="{{ route('home') }}"><i class="la la-bell"></i>Message <span class="badge badge-info radius-rounded p-1 ml-1">2</span></a></li>
                         
                         
@@ -197,6 +181,8 @@
     </div>
    
        <!-- template js files -->
+
+<script src="addasset/js/JsBarcode.all.min.js" ></script>
 <script src="addasset/js/jquery-3.4.1.min.js"></script>
 <script src="addasset/js/popper.min.js"></script>
 <script src="addasset/js/bootstrap.min.js"></script>

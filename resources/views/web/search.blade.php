@@ -12,9 +12,11 @@
 
                         </div>
                         <div class="bform">
-                            <form action="applycode.php" class="px-0 px-md-5" method='POST'>
+                            
+                            <form action="" class="px-0 px-md-5" method='POST'>
+                                @csrf
                                 <div class="d-flex flex-column align-items-center jutify-content-center mx-4 mx-md-5">
-                                    <input type="number" class="df-control" required id="name" name="name"
+                                    <input type="number" class="df-control" required id="transid" name="transid"
                                         placeholder="Enter code *">
                                     <input type="submit" name='submit' class="bfs-btn" value="Next">
                                 </div>

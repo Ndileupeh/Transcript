@@ -1,121 +1,167 @@
-<head>
-
-    <meta charset="utf-8">
-    <title>Transcript Application</title>
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <meta name="keywords" content="">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-
-    <link href="https://fonts.googleapis.com/css?family=Oswald:200,300,400,500,600,700&display=swap" rel="stylesheet">
-    <link
-        href="https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap"
-        rel="stylesheet">
-
-
-    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-
-    <link rel="stylesheet" href="assets/css/jquery-ui.css">
-
-    <link rel="stylesheet" href="assets/css/sm-core-css.css" />
-    <link rel="stylesheet" href="assets/css/sm-simple.css" />
-
-    <link rel="stylesheet" href="assets/css/font-awesome.min.css">
-
-    <link rel="stylesheet" href="assets/flaticon/flaticon.css">
-
-    <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
-    <link rel="stylesheet" href="assets/css/owl.theme.default.min.css">
-    <link rel="stylesheet" href="assets/css/jquery.fancybox.min.css" />
-
-    <link rel="stylesheet" href="assets/slick/slick-theme.css">
-    <link rel="stylesheet" href="assets/slick/slick.css">
-
-    <link href="assets/YoutubeVideoModalPlugin/jquery.yu2fvl.css" rel="stylesheet" type="text/css">
-
-    <link rel="stylesheet" href="assets/css/animate.css">
-
-    <link rel="stylesheet" href="assets/css/style.css">
-
-    <link rel="stylesheet" href="assets/css/responsive.css">
-    <link rel="shortcut icon" type="image/png" href="assets/img/favicon.ico">
-</head>
-
-<body class="d-flex flex-column">
-    <div id="preloader"></div>
-
-    <header class="header-area dfoody-header shadow">
-        <div class="dfoody-top-header">
-            <div class="container">
-
-            </div>
-        </div>
-        </div>
-        </div>
-        <div class="dfoody-header-box ">
-            <div class="container">
-                <div class="row">
-                    <div class="col-3 col-md-3">
-                        <div class="logo-wrapper">
-                            <a href="{{ route('apply') }}">
-                                <img src="assets/img/logo.png" alt="">
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col-9 col-md-9">
-                        <div class="gm-box">
-                            <div class="dfoody-menu-wrapper">
-
-                                <input id="dfoodyMenu-state" type="checkbox" />
-                                <label class="dfoodyMenu-btn" for="dfoodyMenu-state">
-                                    <span class="dfoodyMenu-btn-icon"></span>
-                                </label>
-                                <ul id="dfoodyMenu" class="sm sm-simple dfoody-menu">
-                                    <li><a href="{{ route('home') }}">Home</a>
-
-                                    </li>
-
-                                    <li>
-                                        <a href="{{ route('apply') }}">Transcript Application</a>
-                                    </li>
-                                    <li>
-                                        <a href="{{ route('payment') }}">payment</a>
-                                    </li>
-
-
-                                    <li>
-                                        <a href="{{ route('search') }}">Check</a>
-                                    </li>
-                                    <li>
-                                        <a href="{{ route('apply') }}">Delivery Mode</a>
-                                    </li>
-                                </ul>
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=utf-8">
+        <meta name="author" content="TechyDevs">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    
+        <title>Transcript</title>
+    
+        <!-- Google fonts -->
+        <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+        <!-- Favicon -->
+        <link rel="icon" sizes="16x16" href="images/favicon.png">
+    
+        <!-- inject:css -->
+        <link rel="stylesheet" href="addasset/css/bootstrap.min.css">
+        <link rel="stylesheet" href="addasset/css/font-awesome.min.css">
+        <link rel="stylesheet" href="addasset/css/line-awesome.css">
+        <link rel="stylesheet" href="addasset/css/animate.min.css">
+        <link rel="stylesheet" href="addasset/css/owl.carousel.min.css">
+        <link rel="stylesheet" href="addasset/css/owl.theme.default.min.css">
+        <link rel="stylesheet" href="addasset/css/bootstrap-select.min.css">
+        <link rel="stylesheet" href="addasset/css/magnific-popup.css">
+        <link rel="stylesheet" href="addasset/css/fancybox.css">
+        <link rel="stylesheet" href="addasset/css/jquery.filer.css">
+        <link rel="stylesheet" href="addasset/css/tooltipster.bundle.css">
+        <link rel="stylesheet" href="addasset/css/jqvmap.css">
+        <link rel="stylesheet" href="addasset/css/style.css">
+        
+        
+        <!-- end inject -->
+    </head>
+    </head>
+    <body>
+    <header class="header-menu-area dashboard-header">
+        <div class="header-menu-content dashboard-menu-content">
+            <div class="container-fluid">
+                <div class="main-menu-content py-2">
+                    <div class="row align-items-center">
+                        <div class="col-lg-2">
+                            <div class="logo-box">
+                                <a href="index.html" class="logo"><img src="assets/img/logo.png" alt="logo"></a>
+                                <div class="menu-toggler">
+                                    <i class="la la-bars"></i>
+                                    <i class="la la-times"></i>
+                                </div>
                             </div>
-                            <div class="mt-icons">
-                                <ul class="mti-list">
-
-                                    <li>
-                                        <span id="cart"><i class="flaticon-shopping-cart"></i><span
-                                                class="badge">02</span></span>
-                                        <div class="shopping-cart">
-                                            <div class="shopping-cart-header">
-                                                <div class="shopping-cart-total">
-
-                                                </div>
+                        </div><!-- end col-lg-2 -->
+                        <div class="col-lg-10">
+                            <div class="menu-wrapper">
+                                
+                                <nav class="main-menu">
+                                    <ul>
+                                       
+                                        <li>
+                                            <a href="{{ route('home') }}">Home</a>
+                                            
+                                        </li>
+                                        <li><a href="contact.html">contact</a></li>
+                                    </ul><!-- end ul -->
+                                </nav><!-- end main-menu -->
+                                <div class="logo-right-button d-flex align-items-center">
+                                    <div class="header-action-button d-flex align-items-center">
+                                        <div class="notification-wrap d-flex align-items-center">
+                                            <div class="notification-item mr-3">
+                                                <div class="dropdown">
+                                                    <button class="notification-btn dropdown-toggle" type="button" id="notificationDropdownMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                        <i class="la la-bell"></i>
+                                                        <span class="quantity">5</span>
+                                                    </button>
+                                                    <div class="dropdown-menu" aria-labelledby="notificationDropdownMenu">
+                                                        <div class="mess-dropdown">
+                                                            <div class="mess__title">
+                                                                <h4 class="widget-title">Notifications</h4>
+                                                            </div><!-- end mess__title -->
+                                                            
+                                                            <div class="btn-box p-2 text-center">
+                                                                <a href="dashboard.html">Show All Notifications</a>
+                                                            </div><!-- end btn-box -->
+                                                        </div><!-- end mess-dropdown -->
+                                                    </div><!-- end dropdown-menu -->
+                                                </div><!-- end dropdown -->
                                             </div>
-
-
-                                            <a href="{{ route('home') }}" class="button">Checkout</a>
+                                            <div class="notification-item mr-3">
+                                                <div class="dropdown">
+                                                    <button class="notification-btn dropdown-toggle" type="button" id="messageDropdownMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                        <i class="la la-envelope"></i>
+                                                        <span class="quantity">5</span>
+                                                    </button>
+                                                    <div class="dropdown-menu" aria-labelledby="messageDropdownMenu">
+                                                        <div class="mess-dropdown">
+                                                            <div class="mess__title">
+                                                                <h4 class="widget-title">Messages</h4>
+                                                            </div><!-- end mess__title -->
+                                                           
+                                                            <div class="btn-box p-2 text-center">
+                                                                <a href="dashboard-message.html">Show All Message</a>
+                                                            </div><!-- end btn-box -->
+                                                        </div><!-- end mess-dropdown -->
+                                                    </div><!-- end dropdown-menu -->
+                                                </div><!-- end dropdown -->
+                                            </div>
                                         </div>
-
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
+                                        
+                                    </div>
+                                </div><!-- end logo-right-button -->
+                                
+                            </div><!-- end menu-wrapper -->
+                        </div><!-- end col-lg-10 -->
+                    </div><!-- end row -->
                 </div>
-            </div>
-        </div>
+            </div><!-- end container-fluid -->
+        </div><!-- end header-menu-content -->
     </header>
+    
+    @yield('content')
+    
+    
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="copyright-content mt-0 pt-0 pb-4 border-top-0 text-center">
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <p class="copy__desc">&copy; 2020 All Rights Reserved. by <a
+                                        href="https://www.ubuea.cm/facilities"> Unversity of Buea.</a></p>
+                            </div><!-- end col-lg-12 -->
+                        </div><!-- end row -->
+                    </div><!-- end copyright-content -->
+                </div><!-- end col-lg-12 -->
+            </div>
+       </footer>
+    </div>
+    
+    <!-- template js files -->
+    
+    <script src="addasset/js/JsBarcode.all.min.js" ></script>
+    <script src="addasset/js/jquery-3.4.1.min.js"></script>
+    <script src="addasset/js/popper.min.js"></script>
+    <script src="addasset/js/bootstrap.min.js"></script>
+    <script src="addasset/js/bootstrap-select.min.js"></script>
+    <script src="addasset/js/owl.carousel.min.js"></script>
+    <script src="addasset/js/magnific-popup.min.js"></script>
+    <script src="addasset/js/isotope.js"></script>
+    <script src="addasset/js/jquery.counterup.min.js"></script>
+    <script src="addasset/js/fancybox.js"></script>
+    <script src="addasset/js/chart.js"></script>
+    <script src="addasset/js/bar-chart.js"></script>
+    <script src="addasset/js/line-chart-2.js"></script>
+    <script src="addasset/js/smooth-scrolling.js"></script>
+    <script src="addasset/js/tooltipster.bundle.min.js"></script>
+    <script src="addasset/js/jquery.filer.min.js"></script>
+    <script src="addasset/js/jquery.vmap.js"></script>
+    <script src="addasset/js/jquery.vmap.world.js"></script>
+    <script src="addasset/js/jquery.vmap.sampledata.js"></script>
+    <script src="addasset/js/jquery.vmap-script.js"></script>
+    <script src="addasset/js/progress-bar.js"></script>
+    <script src="addasset/js/date-time-picker.js"></script>
+    <script src="addasset/js/emojionearea.min.js"></script>
+    <script src="addasset/js/animated-skills.js"></script>
+    <script src="addasset/js/main.js"></script>
+    
+</body>
+</html>

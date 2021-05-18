@@ -413,13 +413,13 @@ a.btn-style-b {
   letter-spacing: 0px;
   display: inline-block;
   color: #282727;
-  background-color: #fff;
+  background-color: #77af17;
   border: 2px solid #77af17;
   padding: 17px 36px;
   border-radius: 30px;
   text-transform: uppercase; }
   a.btn-style-b:hover {
-    background-color: #77af17; }
+    background-color: #fff; }
 
 .section-padding {
   padding: 120px 0px; }

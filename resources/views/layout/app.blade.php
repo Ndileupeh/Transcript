@@ -16,6 +16,7 @@
     <link
         href="https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap"
         rel="stylesheet">
+        
 
 
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
@@ -41,9 +42,9 @@
     <link rel="stylesheet" href="assets/css/animate.css">
 
     <link rel="stylesheet" href="assets/css/style.css">
-
     <link rel="stylesheet" href="assets/css/responsive.css">
     <link rel="shortcut icon" type="image/png" href="assets/img/favicon.ico">
+    @yield('style')
 </head>
 
 <body class="d-flex flex-column">
@@ -94,28 +95,12 @@
                                     <li>
                                         <a href="{{ route('apply') }}">Delivery Mode</a>
                                     </li>
-                                </ul>
-                            </div>
-                            <div class="mt-icons">
-                                <ul class="mti-list">
-
                                     <li>
-                                        <span id="cart"><i class="flaticon-shopping-cart"></i><span
-                                                class="badge">02</span></span>
-                                        <div class="shopping-cart">
-                                            <div class="shopping-cart-header">
-                                                <div class="shopping-cart-total">
-
-                                                </div>
-                                            </div>
-
-
-                                            <a href="{{ route('home') }}" class="button">Checkout</a>
-                                        </div>
-
+                                        <a href="{{ route('contact') }}">Contact Us</a>
                                     </li>
                                 </ul>
                             </div>
+                            
                         </div>
                     </div>
                 </div>
@@ -143,6 +128,8 @@
     </div>
    
     <!-- template js files -->
+
+    <script type="text/javascript" src="assets/JsBarcode.all.min.js" ></script>
     <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
     <script src="assets/js/jquery-3.2.0.min.js"></script>
     <script src="assets/js/jquery-ui.js"></script>
@@ -165,6 +152,8 @@
     <script src="assets/js/bootstrap.min.js"></script>
 
     <script src="assets/js/theme.js"></script>
+    @yield('script')
+       
 </body>
 
 </html>
